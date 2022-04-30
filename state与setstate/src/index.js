@@ -8,14 +8,15 @@ class Hello extends React.Component{
     {
         count:0
     }
+    back=()=>{
+        this.setState({
+            count:this.state.count+1
+        })
+    }
     render(){
         return <div>
             <h1>count的值是：{this.state.count}</h1>
-            <button onClick={()=>{
-                 this.setState({
-                     count:this.state.count+1
-                 })
-            }}>+1</button>
+            <button onClick={this.back}>+1</button>
         </div>
     }
 }
