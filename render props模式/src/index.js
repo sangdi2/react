@@ -35,6 +35,9 @@ class Chidrenn extends React.Component {
   componentDidMount(){
     window.addEventListener('mousemove',this.move)
   }
+  componentWillUnmount(){
+    window.removeEventListener('mousemove',this.move)
+  }
   render() {
     return this.props.children(this.state)
   }
