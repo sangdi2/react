@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import Hello from './函数组件';
-import Hi from './类组件';
+import Hello from './函数组件';
+// import Hi from './类组件';
 
 
 
 
-ReactDOM.render(<Hi/>,document.getElementById('root'))
+ReactDOM.render(<Hello/>,document.getElementById('root'))
